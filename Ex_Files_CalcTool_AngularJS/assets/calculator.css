@@ -1,0 +1,69 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+#myCalculator { margin: 0; padding: 0; font-size: 16px; font-family: 'Open Sans', sans-serif; font-weight: 300; line-height: 24px; max-width: 800px; }
+
+
+#myCalculator main {background-color: #444;}
+#myCalculator main section {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 110px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 63px 100px;
+}
+#myCalculator main::after {content:''; clear: both; display: block;}
+#myCalculator main section.inc { background-color: #ba2d2d; background-image: url(images/bulb_inc.svg);}
+#myCalculator main section.hal { background-color: #de6615; background-image: url(images/bulb_hal.svg);}
+#myCalculator main section.cfl { background-color: #efc20f; background-image: url(images/bulb_cfl.svg);}
+#myCalculator main section.led { background-color: #36b23c; background-image: url(images/bulb_led.svg);}
+
+#myCalculator main section > div {padding: 5px 0; background-color: rgba(0,0,0,0.15);}
+#myCalculator main h4 {
+    font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+#myCalculator main p {margin: 0px;}
+#myCalculator main p:nth-of-type(1) {font-size: 1.5em; font-weight: 700;}
+#myCalculator main p:nth-of-type(1)::after {content: ' w';}
+
+#myCalculator main p:nth-of-type(2) {font-size: 1em; font-weight: 300;}
+#myCalculator main p:nth-of-type(2)::before {content: '$';}
+#myCalculator main p:nth-of-type(2)::after {content: ' /yr'; opacity: 0.6;}
+
+#myCalculator form {background-color: #000; color: #eee;}
+#myCalculator form::after {content: ''; display: block; clear: both;} /* otherwise, the form has no height, the floats aren't cleared */
+#myCalculator form br {display: none;}
+#myCalculator form > div {float: left; width: 33.33%; text-align: center; padding: 20px 0;}
+
+#myCalculator form h4, #myCalculator form p {color: #aaa; font-weight: 300;}
+#myCalculator form h4 {margin: 0 0 -15px 0; font-size: 1.5em;}
+#myCalculator form input[type=number] {width: 30px; text-align: left; font-size: 1em;}
+#myCalculator form select {
+    font-size: 1em; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: #fff url(images/icons_arrows.svg) no-repeat right 6px;
+    background-size: 30px 20px;
+    padding: 3px 30px 3px 5px;
+}
+
+#myCalculator form select::-ms-expand {display: none;}
+
+@media screen and (max-width: 500px) {
+    #myCalculator main section {width: 50%;}
+    #myCalculator form br {display: inline;}
+    #myCalculator form h4 {font-size: 1.2em;}
+    #myCalculator form input[type=number], #myCalculator form select {font-size: 0.8em;}
+    
+}
