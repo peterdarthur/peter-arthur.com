@@ -12,6 +12,8 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+php_errorlog
+wp-admin/php_errorlog
 
 /readme.html
 /license.txt
