@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/driver-behavior.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+                <div class="panel-container">
+                    <div class="root-page">
+
+                        <div id="behavior-page" class="bootstrapped">
+
+                            <div class="header-bar noI">
+                                <h1 class="driverbehavior-h1">Fleet Overview</h1>
+                            </div>
+                            <div class="header-bar-nav noI">
+
+                                <div class="nav-dropdowns">
+                                    <form action="" id="" method="post" style="float: left; margin-right: 15px; bottom: 0px;">
+                                        <fieldset>
+                                          <select name="periods" id="periods">
+                                                <option value="" id="view-all-groups" name="fleet" value="Fleet" selected="selected"></option>
+                                          </select>
+                                        </fieldset>
+                                    </form>
+
+                                    <form action="" id="" method="post" style="float: left; margin-right: 10px; bottom: 0px;">
+                                        <fieldset>
+                                          <select name="choices" id="choices">
+                                                <option value="" id="view-all-groups" name="fleet" value="Fleet" selected="selected">Fleet</option>
+                                          </select>
+                                        </fieldset>
+                                    </form>
+
+                                </div>
+
+                                <div class="viewTabs">
+                                    <div class="tab-scores active-tab"><i class="fa fa-th-large"></i>&nbsp; Scores</div>
+                                    <div class="tab-alerts"><i class="fa fa-exclamation-triangle"></i>&nbsp; Alerts<!--  <div class="circle-number">3</div> --></div>
+                                    <div class="tab-trends"><i class="fa fa-line-chart"></i>&nbsp; Trends</div>
+                                    <div class="tab-reports"><i class="fa fa-file-text"></i>&nbsp; Reports</div>
+                                    <!-- <div class="tab-reports"><i class="fa fa-print"></i></div> -->
+                                    <div class="tab-scorelog"><i class="fa fa-list"></i>&nbsp; Score Log</div>
+                                </div>
+                              </div>
+
+                              <div class="dash-left-col noI" style="width: 330px; min-height: 400px; float: left; clear: both;">
+
+
+                                <div class="mini-widget mw-type-scores mw-driver-scores" style="margin-bottom: 0px;">
+
+                                    <div class="mini-widget-heading mw-averages-title clearfix">
+                                        Fleet - Current Month
+                                    </div>
+
+
+                                    <div class="mini-widget-body clearfix" style="padding-bottom: 10px;">
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+
+                                                <div class="widget-score-group wsg-aggression">
+
+                                                    <svg style="position: absolute; top: 0px; left: 0px;" viewBox="0 0 140 105" preserveAspectRatio="xMidYMid meet">
+                                                        <defs>
+                                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                <stop offset="0%" style="stop-color: #fff;  stop-opacity:0.1" />
+                                                                <!-- stop-color:rgba(255,255,255,0.1); -->
+                                                                <stop offset="100%" style="stop-color: #fff;  stop-opacity:0.05" />
+                                                                <!-- stop-color:rgba(255,255,255,0.05); -->
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <polygon points="0 60,0 105,140 105,140 10" stroke="rgba(255,255,255,0.6)" stroke-width="0" fill="url(#grad1)">
+                                                        </polygon>
+                                                    </svg>
+
+                                                    <!-- <i class="fa fa-arrow-up"></i> -->
+                                                    <div class="number"></div>
+                                                    <div class="sub-number">Aggressiveness</div>
+                                                    <div class="comparison-avg">Previous Month: <b></b></div>
+                                                    <!-- <div class="flag-bottom"></div> -->
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6">
+
+                                                <div class="widget-score-group wsg-distraction">
+
+                                                    <svg style="position: absolute; top: 0px; left: 0px;" viewBox="0 0 140 105" preserveAspectRatio="xMidYMid meet">
+                                                        <defs>
+                                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                <stop offset="0%" style="stop-color: #fff;  stop-opacity:0.1" />
+                                                                <!-- stop-color:rgba(255,255,255,0.1); -->
+                                                                <stop offset="100%" style="stop-color: #fff;  stop-opacity:0.05" />
+                                                                <!-- stop-color:rgba(255,255,255,0.05); -->
+                                                            </linearGradient>
+                                                        </defs>
+                                                        <polygon points="0 60,0 105,140 105,140 10" stroke="rgba(255,255,255,0.6)" stroke-width="0" fill="url(#grad1)">
+                                                        </polygon>
+                                                    </svg>
+
+                                                    <!-- <i class="fa fa-arrow-up"></i> -->
+                                                    <div class="sub-number">Distraction</div>
+                                                    <div class="number"></div>
+                                                    <div class="comparison-avg">Previous Month: <b></b></div>
+
+                                                    <!-- <div class="flag-bottom"></div> -->
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                                <div class="mini-widget mw-type-scores mw-driver-scores" style="margin-bottom: 10px;">
+
+                                                    <div class="mini-widget-body clearfix" style="height: 50px; padding-left: 0px;">
+
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+
+                                                                  <div class="widget-score-group wsg-speeding">
+
+                                                                    <svg style="position: absolute; top: 0px; left: 0px;" viewBox="0 0 140 105" preserveAspectRatio="xMidYMid meet">
+                                                                        <defs>
+                                                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                              <stop offset="0%" style="stop-color: #fff;  stop-opacity:0.1" /><!-- stop-color:rgba(255,255,255,0.1); -->
+                                                                              <stop offset="100%" style="stop-color: #fff;  stop-opacity:0.05" /><!-- stop-color:rgba(255,255,255,0.05); -->
+                                                                            </linearGradient>
+                                                                          </defs>
+                                                                        <polygon points="0 60,0 105,140 105,140 10" stroke="rgba(255,255,255,0.6)" stroke-width="0" fill="url(#grad1)">
+                                                                        </polygon>
+                                                                    </svg>
+
+                                                                    <!-- <i class="fa fa-arrow-up"></i> -->
+                                                                    <div class="sub-number">Speeding</div>
+                                                                    <div class="number"></div>
+                                                                    <div class="comparison-avg">Previous Month: <b></b></div>
+
+                                                                    <!-- <div class="flag-bottom"></div> -->
+                                                                  </div>
+
+                                                            </div>
+                                                            <div class="col-lg-6">
+
+                                                                  <div class="widget-score-group wsg-road-alerts">
+
+                                                                    <svg style="position: absolute; top: 0px; left: 0px;" viewBox="0 0 140 105" preserveAspectRatio="xMidYMid meet">
+                                                                        <defs>
+                                                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                              <stop offset="0%" style="stop-color: #fff;  stop-opacity:0.1" /><!-- stop-color:rgba(255,255,255,0.1); -->
+                                                                              <stop offset="100%" style="stop-color: #fff;  stop-opacity:0.05" /><!-- stop-color:rgba(255,255,255,0.05); -->
+                                                                            </linearGradient>
+                                                                          </defs>
+                                                                        <polygon points="0 60,0 105,140 105,140 10" stroke="rgba(255,255,255,0.6)" stroke-width="0" fill="url(#grad1)">
+                                                                        </polygon>
+                                                                    </svg>
+
+                                                                    <!-- <i class="fa fa-arrow-up"></i> -->
+                                                                    <div class="sub-number">Road Alerts</div>
+                                                                    <div class="number"></div>
+                                                                    <div class="comparison-avg">Previous Month: <b></b></div>
+
+                                                                    <!-- <div class="flag-bottom"></div> -->
+                                                                  </div>
+
+                                                            </div>
+
+                                                        </div> <!-- row -->
+
+                                                    </div> <!-- mini-widget-body -->
+
+                                                </div> <!-- mini-widget -->
+
+                                                <div class="mini-widget mw-type-scores mw-driver-scores" style="margin-bottom: 20px;">
+
+                                                    <div class="mini-widget-body clearfix" style="height: 50px; padding-left: 0px;">
+
+                                                        <div class="row">
+
+                                                            <div class="col-lg-6">
+
+                                                                  <div class="widget-score-group wsg-compound-events">
+
+                                                                    <svg style="position: absolute; top: 0px; left: 0px;" viewBox="0 0 140 105" preserveAspectRatio="xMidYMid meet">
+                                                                        <defs>
+                                                                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                              <stop offset="0%" style="stop-color: #fff;  stop-opacity:0.1" /><!-- stop-color:rgba(255,255,255,0.1); -->
+                                                                              <stop offset="100%" style="stop-color: #fff;  stop-opacity:0.05" /><!-- stop-color:rgba(255,255,255,0.05); -->
+                                                                            </linearGradient>
+                                                                          </defs>
+                                                                        <polygon points="0 60,0 105,140 105,140 10" stroke="rgba(255,255,255,0.6)" stroke-width="0" fill="url(#grad1)">
+                                                                        </polygon>
+                                                                    </svg>
+
+                                                                    <!-- <i class="fa fa-arrow-up"></i> -->
+                                                                    <div class="sub-number">Compound</div>
+                                                                    <div class="number"></div>
+                                                                    <div class="comparison-avg">Previous Month: <b></b></div>
+
+                                                                    <!-- <div class="flag-bottom"></div> -->
+                                                                  </div>
+
+                                                            </div>
+                                                            <div class="col-lg-6">
+
+                                                                  <div class="time-and-miles">
+                                                                    <ul>
+                                                                      <li class="driveTime"> <br><b>Total Drive Time</b></li>
+                                                                    </ul>
+                                                                  </div>
+
+                                                                  <div class="time-and-miles">
+                                                                    <ul>
+                                                                      <li class="miles"> <br><b>Total Distance</b></li>
+                                                                    </ul>
+                                                                  </div>
+
+                                                            </div>
+
+                                                        </div> <!-- row -->
+
+                                                    </div> <!-- mini-widget-body -->
+
+                                                </div> <!-- mini-widget -->
+
+
+
+                                    <div class="widget widget-scroll-152 summary-widget widget-dash-groups" style="max-width: 290px; border: none;">
+                                        <div class="mini-widget-heading clearfix list-title">
+                                        Groups - Current month
+                                    </div>
+                                        <div class="widget-body" style="width: 290px; height: 198px; border: 1px solid #ddd;">
+
+                                            <table id="list-container-header" class="widget-list fixed-headers" style="">
+                                                <thead style="border-bottom: 4px solid #ddd;">
+                                                    <tr>
+                                                        <th class="name">
+                                                            <div style="width: 18px; height: 30px; padding-top: 6px;"><i class="fa fa-caret-down"></i></div> <b class="list-type">Group</b>
+                                                        </th>
+                                                        <th class="agg-col" style="border-bottom: 4px solid #258477; background-color: rgba(37, 132, 119, 0.8); padding-right: 2px;">
+                                                            <div style="width: 18px; height: 30px; padding-top: 6px;"><i class="fa" ></i></div> Agg
+                                                        </th>
+                                                        <th class="dist-col" style="border-bottom: 4px solid #2a6c96; background-color: rgba(42, 108, 150, 0.8); padding-right: 2px;">
+                                                            <div style="width: 18px; height: 30px; padding-top: 6px;"><i class="fa" ></i></div> Dist
+                                                        </th>
+                                                        <th class="alert-col" style="">
+                                                            <div style="width: 18px; height: 30px; padding-top: 6px;"><i class="fa" ></i></div>
+                                                            <div class="circle-number" style="margin-top: 0px;"></div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody id="list-container" style="height: 163px; max-height: 430px;">
+
+                                                </tbody>
+
+
+                                            </table>
+                                        </div>
+
+
+                                        <div id="eventsPreview" class="list-body-individual mini-widget-body table-widget clearfix" style="display: none; position: absolute; width: 290px; height: 202px; background-color: #f5f5f5; border: 1px solid #ddd; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; overflow-x: hidden; overflow-y: visible;">
+                                            <table id="list-container-header" class="widget-list fixed-headers" style="">
+                                                <thead style="border-bottom: 4px solid #ddd;">
+                                                    <tr>
+                                                        <th class="coachStatus">
+                                                            <i class="fa fa-circle-o" style=""></i>
+                                                        </th>
+                                                        <th class="eventType">
+                                                            Event
+                                                        </th>
+                                                        <th class="dateTime">
+                                                            Date and Time
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody id="alerts-preview-container" style="height: 163px; max-height: 430px;">
+
+
+                                                </tbody>
+
+
+                                            </table>
+
+                                        </div>
+
+
+                                       </div>
+
+                                       <!-- <div id="bplaceholder" class="list-body-individual" style="display: none; width: 320px; height:275px; margin: -4px 0px 0px -15px;"></div>
+                                        <div id="btooltip"></div> -->
+
+
+                                   </div>
+                                   <div class="dash-right-col noI"  style="width: 612px; min-height: 400px; float: left; margin-left: 10px; margin-right: -10px;">
+
+                                      <div class="mini-widget" style="width: 561px; margin-left: 41px; position: absolute;">
+                                       <div id="scatter-fit-to-data" class="gray-btn print-hidden" style="display: block;">Fit to Data</div>
+                                       <div class="mini-widget-heading clearfix">
+                                         <div class="title sp-title">Group Comparison</div>
+
+
+                                       </div>
+                                       <div class="mini-widget-body clearfix" style="height: 512px; padding: 0px; background-color: #f5f5f5;">
+
+                                       </div><!-- widget body -->
+                                      </div><!-- widget -->
+
+                                        <!-- From /motodev/driver-behavior.html -->
+                                          <div class="scrollArea" style="width: 612px; height: 582px; margin: 5px 0px 0px 0px;">
+                                            <div id="content">
+
+                                              <div class="demo-container" style="position: relative; width: 612px; height: 582px;">
+                                                <div class="scatter-avg-x"></div>
+                                                <div class="scatter-avg-y"></div>
+
+                                                <div style="clear: both;"></div>
+                                                <div id="splaceholder" style="width: 612px; height: 562px; position: relative;"></div>
+
+                                                <div id="bplaceholder" style="display: none; width: 612px; height: 562px; position: relative;"></div>
+                                                <div id="stooltip" style="position: relative; "></div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+
+                                   <!-- </div> -->
+
+                                   </div>
+
+                                    <div class="push"></div>
+
+                                    <div class="mini-widget table-widget noI" id="behaviorEvents" style="display: none; height: 509px; width: 942px; margin: 0px; position: relative;">
+
+                                        <form action="" id="alerts-date-picker" class="db-datepicker" method="post">
+                                            <label for="alerts-date-pickerFrom">From</label> <input type="text" id="alerts-date-pickerFrom" name="from" value="">
+                                            <label for="alerts-date-pickerTo">to</label> <input type="text" id="alerts-date-pickerTo" name="to" value="">
+                                            <input class="gray-btn" name="submit" type="submit" value="Submit">
+                                        </form>
+
+                                       <div class="mini-widget-heading clearfix">
+                                         <div class="title">Alerts</div>
+                                       </div>
+
+                                       <div class="mini-widget-body clearfix" style="height: 462px; padding: 0px; background-color: #f5f5f5; border: 1px solid rgb(221, 221, 221); color: #333;">
+
+                                            <table class="widget-list fixed-headers sort">
+                                                <thead style="border-bottom: 4px solid #ddd;">
+                                                    <tr>
+                                                        <th class="coachStatus">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                            <i class="fa fa-circle-o" style=""></i>
+                                                        </th>
+                                                        <th class="eventGroup">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Group
+                                                        </th>
+                                                        <th class="eventVehicle">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Vehicle
+                                                        </th>
+                                                        <th class="eventOperator">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Operator
+                                                        </th>
+                                                        <th class="eventType">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Event
+                                                        </th>
+                                                        <th class="dateTime sortedBy">
+                                                            <div class="sort-arrow"><i class="fa fa-caret-up"></i></div>
+                                                             Date and Time
+                                                        </th>
+                                                        <th class="eventDetails">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Results / Scorecard
+                                                        </th>
+                                                        <th class="eventActions">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Actions
+                                                        </th>
+                                                        <th class="eventScore">
+                                                            <div class="sort-arrow"><i class="fa"></i></div>
+                                                             Score
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody id="alerts-container" style="">
+
+                                                </tbody>
+
+
+                                            </table>
+
+
+
+                                       </div><!-- widget body -->
+                                    </div><!-- widget -->
+
+                                    <div id="print-alert" style="display: none;">
+                                        <div class="print-page-btn print-hidden" onclick="window.print()"><a title="Print this page"><i class="fa fa-print"></i> Print</a></div>
+
+                                        <div class="gray-btn print-hidden" id="back-to-alerts">Back to Alerts List</div>
+
+                                        <h3>Alert Details<br><span id="print-alert-subhead" style="font-weight: normal;">Vehicle -- Time</span></h3>
+                                        <p id="printed-timestamp"></p>
+                                        <div id="print-alert-contents">
+                                            <p class="suggestion-subhead event-vehicle-name">Driver Name</p>
+                                                <div class="suggestion-account-detail top-alert-details" style="width: 200px; padding: 0px 20px 0px 0px;">
+                                                    <div class="event-trigger">Event Trigger: <strong></strong></div>
+
+                                                    <div class="event-date">Date: <strong></strong></div>
+                                                    <div class="event-time">Time: <strong></strong></div>
+
+                                                </div>
+
+                                                <div class="suggestion-account-detail top-alert-details" style="width: 245px; padding: 0px 20px 0px 0px;">
+
+                                                    <!-- <div class="video-reviewed"><input type="checkbox" name="is_reviewed"> Video Reviewed</div> -->
+                                                    <div class="event-group">Group: <strong></strong></div>
+                                                    <div class="event-coached-date">Coached: <strong></strong></div>
+
+                                                    <!-- <div class="delete-event"><i class="fa fa-times"></i> Delete this Alert</div> -->
+                                                </div>
+
+                                                <div class="push"></div>
+
+                                                <div class="divider-title-infractions">Infractions</div>
+
+                                                        <ul class="event-infractions">
+                                                            <li id="trigger_title">Event Trigger</li>
+                                                            <li id="trigger_collision" class="event_trigger"> Collision</li>
+                                                            <li id="trigger_speeding" class="event_trigger"> Speeding</li>
+
+                                                            <li id="fundamentals_title">Fundamentals</li>
+                                                            <li class="event_fundamentals" id="fundamentals_following"> Following too closely</li>
+                                                            <li class="event_fundamentals" id="fundamentals_traffic"> Traffic violation</li>
+                                                            <li class="event_fundamentals" id="fundamentals_speed"> Unsafe speed</li>
+                                                            <li class="event_fundamentals" id="fundamentals_lane"> Poor lane selection</li>
+                                                            <li class="event_fundamentals" id="fundamentals_blind_spot"> In another’s blind spot</li>
+                                                            <li class="event_fundamentals" id="fundamentals_leave_out"> Failure to leave an out</li>
+                                                            <li class="event_fundamentals" id="fundamentals_stop"> Failure to stop</li>
+                                                            <li class="event_fundamentals" id="fundamentals_yield"> Failure to yield</li>
+                                                            <li class="event_fundamentals" id="fundamentals_passing"> Unsafe passing</li>
+                                                            <li class="event_fundamentals" id="fundamentals_backing"> Unsafe backing</li>
+                                                            <li class="event_fundamentals" id="fundamentals_signals"> Failure to use signals</li>
+
+                                                            <li id="equipment_title">Improper use of equipment</li>
+                                                            <li class="event_equipment" id="equipment_driverview"> Obstructed view of driver</li>
+                                                            <li class="event_equipment" id="equipment_tamper"> Tampering / Abusing equipment</li>
+                                                            <li class="event_equipment" id="equipment_exteriorview"> Obstructed exterior view</li>
+                                                            <li class="event_equipment" id="equipment_panic"> Overuse of panic button</li>
+
+                                                            <li id="risky_title">Risky Actions</li>
+                                                            <li class="event_risky" id="risky_seatbelt_driver"> Driver seatbelt unbelted</li>
+                                                            <li class="event_risky" id="risky_seatbelt_passenger"> Passenger seatbelt unbelted</li>
+                                                            <li class="event_risky" id="risky_aggressive"> Aggressive behavior or driving</li>
+
+                                                            <li id="awareness_title">Awareness</li>
+                                                            <li class="event_awareness" id="awareness_scan_road"> Not scanning roadway</li>
+                                                            <li class="event_awareness" id="awareness_blind_spots"> Not checking blind spots</li>
+                                                            <li class="event_awareness" id="awareness_mirrors"> Not checking mirrors</li>
+                                                            <li class="event_awareness" id="awareness_scan_intersection"> Not scanning intersection</li>
+                                                            <li class="event_awareness" id="awareness_autopilot"> Autopilot, stare</li>
+                                                            <li class="event_awareness" id="awareness_fatigue"> Fatigue or eyes closed</li>
+
+                                                            <li id="distractions_title">Distractions</li>
+                                                            <li class="event_distractions" id="distractions_phone_handsfree"> Mobile phone - hands free</li>
+                                                            <li class="event_distractions" id="distractions_phone_hand"> Mobile phone - in hand</li>
+                                                            <li class="event_distractions" id="distractions_food"> Food or beverage</li>
+                                                            <li class="event_distractions" id="distractions_map"> Manifest, map or navigation</li>
+                                                            <li class="event_distractions" id="distractions_hygiene"> Smoking or Personal Hygiene</li>
+                                                            <li class="event_distractions" id="distractions_passengers"> Passenger(s)</li>
+                                                            <li class="event_distractions" id="distractions_audio"> Loud Audio</li>
+                                                        </ul>
+
+                                                        <div id="event-score"></div>
+
+                                                <div class="divider-title-notes">Notes</div>
+                                                <div id="event-notes"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="push"></div>
+
+
+
+                                    <div class="mini-widget noI" id="trendLine" style="display: none; width: 942px; margin-left: 0px; position: absolute;">
+                                        <div class="indiv-trend-type gray-btn" id="trendMonths">13 months</div>
+                                        <div class="indiv-trend-type gray-btn" id="trendDaily">Daily</div>
+                                        <div class="mini-widget-heading clearfix">
+                                            <div class="title">Trend Line</div>
+                                        </div>
+                                        <div class="mini-widget-body clearfix" style="height: 360px; padding: 0px; background-color: #f5f5f5; color: #333; border: 1px solid #b3b3b3;">
+
+                                            <ul id="trendSelector">
+                                              <li class="aggressiveness-cbbg" id="currAggr" data-index="1">Aggressiveness</li>
+                                              <li class="distraction-cbbg unselected" id="currDistr" data-index="3">Distraction</li>
+                                              <li class="speeding-cbbg withSevere unselected" id="currSpeed" data-index="5">Speeding</li>
+                                              <li class="road-alerts-cbbg unselected" id="currRoad" data-index="7">Road Alerts</li>
+                                              <li class="compound-events-cbbg unselected" id="currCompd" data-index="9">Compound Events</li>
+                                              <li class="braking-cbbg withSevere unselected" id="currBrake" data-index="11">Braking</li>
+                                              <li class="left-turn-cbbg withSevere unselected" id="currLT" data-index="13">Left Turn</li>
+                                              <li class="right-turn-cbbg withSevere unselected" id="currRT" data-index="15">Right Turn</li>
+                                              <li class="acceleration-cbbg withSevere unselected" id="currAccel" data-index="17">Acceleration</li>
+                                              <li class="all-cbbg unselected" id="currAll" data-index="100">View All Trends</li>
+                                            </ul>
+
+                                            <!-- <form action="" id="indivDailyTrendOptions" method="post" style="">
+                                                <ul style="width: 200px; list-style: none; margin: 0px 0px 0px 5px;">
+                                                  <li><input type="checkbox" id="showCoaching" name="showCoaching" checked> Dates Coached</li>
+                                                  <li><input type="checkbox" id="showWeekends" name="showWeekends" checked> Weekends</li>
+                                                </ul>
+                                            </form> -->
+
+
+                                        </div><!-- widget body -->
+                                    </div><!-- widget -->
+                                    <!-- <div id="lplaceholder" style="display: none; margin-top: 53px; height: 358px; width: 800px; max-width: 800px; margin-left: 151px;"> -->
+                                    <div id="lplaceholder" style="display: none; margin: 58px 0px 30px 146px; height: 353px; width: 800px; max-width: 800px;">
+                                      <div id="ltooltip"></div>
+                                    </div>
+
+
+                                    <div id="reports-container" style="display: none;">
+                                        <div class="print-page-btn print-hidden screen-hidden" onclick="window.print()"><a title="Print this page"><i class="fa fa-print"></i> Print</a></div>
+                                        <div class="export-csv-btn print-hidden"><a class="exportTableCSV"><i class="fa fa-save"></i> CSV</a></div>
+
+                                        <div class="indiv-report-type gray-btn print-hidden" id="reportMonths">13 months</div>
+                                        <div class="indiv-report-type gray-btn print-hidden" id="reportDaily">Daily</div>
+
+                                        <div class="group-report-type gray-btn print-hidden" id="GrReportAverages">Group Averages (13 months)</div>
+                                        <div class="group-report-type gray-btn print-hidden" id="GrReportCompare">Compare Vehicles (selected month)</div>
+
+                                        <div class="fleet-report-type gray-btn print-hidden" id="FlReportAverages">Fleet Averages (13 months)</div>
+                                        <div class="fleet-report-type gray-btn print-hidden" id="FlReportCompare">Compare Groups (selected month)</div>
+
+                                        <h3>REPORTS</h3>
+                                        <p id="printed-timestamp"></p>
+                                        <table style="width: 882px; background-color: #fff;">
+                                            <thead>
+                                                <tr>
+                                                    <th class="vehicle">Vehicle</th>
+                                                    <th class="time">Time Driven</th>
+                                                    <th class="miles">Miles</th>
+
+                                                    <th class="scores">Aggr</th>
+                                                    <th class="scores">Distr</th>
+                                                    <th class="scores">Brake</th>
+                                                    <th class="scores">Accel</th>
+                                                    <th class="scores">Speed</th>
+                                                    <th class="scores">LTurn</th>
+                                                    <th class="scores">RTurn</th>
+                                                    <th class="scores">Compd</th>
+                                                    <th class="scores">Road</th>
+
+                                                    <th class="alerts">Alerts</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="mini-widget table-widget noI" id="score-log" style="display: none; height: 509px; width: 942px; margin: 0px; position: relative;">
+
+                                        <form action="" id="scorelog-date-picker" class="db-datepicker" method="post" style="">
+                                            <label for="scorelog-date-pickerFrom">From</label> <input type="text" id="scorelog-date-pickerFrom" name="from" value="">
+                                            <label for="scorelog-date-pickerTo">to</label> <input type="text" id="scorelog-date-pickerTo" name="to" value="">
+                                            <input class="gray-btn" name="submit" type="submit" value="Submit">
+                                        </form>
+
+                                       <div class="mini-widget-heading clearfix">
+                                         <div class="title">Score Log</div>
+                                       </div>
+
+                                        <div class="mini-widget-body clearfix" style="height: 462px; padding: 0px; background-color: #f5f5f5; border: 1px solid rgb(221, 221, 221); color: #333;">
+                                            <table class="widget-list fixed-headers">
+                                                <thead style="border-bottom: 4px solid #ddd;">
+                                                    <tr>
+                                                        <th class="scorelogDate">Date</th>
+                                                        <th class="scorelogTime">Time</th>
+                                                        <th class="scorelogGroup">Group</th>
+                                                        <th class="scorelogVehicle">Vehicle</th>
+                                                        <th class="scorelogEventType">Event</th>
+                                                        <th class="scorelogX">X</th>
+                                                        <th class="scorelogY">Y</th>
+                                                        <th class="scorelogZ">Z</th>
+                                                        <th class="scorelogLat">Latitude</th>
+                                                        <th class="scorelogLong">Longitude</th>
+                                                        <th class="scorelogMap">View on Map</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                            </table>
+                                        </div><!-- widget body -->
+
+                                    </div><!-- widget -->
+
+
+                   </div>
+                    </div>
+                    <div class="push" style="height:40px"></div>
+                </div>
+
+
+        <br/>
+        <br/>
+        <br/>
+
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/jquery-ui.min.js"></script>
+        <script src="javascripts/jquery.colorbox.js"></script>
+
+        <!-- Flot Charts -->
+        <script src="javascripts/jquery.flot.js"></script>
+        <script src="javascripts/jquery.flot.orderBar.js"></script>
+        <script src="javascripts/jquery.flot.barnumbers.js"></script>
+        <script src="javascripts/flot.rotateTickLabels.js"></script>
+        <script src="javascripts/jquery.flot.stack.min.js"></script>
+        <script src="javascripts/jquery.flot.pie.min.js"></script>
+        <script src="javascripts/jquery.flot.tooltip.min.js"></script>
+        <script src="javascripts/jquery.flot.resize.min.js"></script>
+        <script src="javascripts/jquery.flot.marks.0.1.js"></script>
+
+        <!-- Custom JS -->
+        <script src="javascripts/menu.js"></script>
+        <script src="javascripts/underscore-min.js"></script>
+        <script src="javascripts/moment.min.js"></script>
+        <script src="javascripts/moment-duration-format.js"></script>
+        <script src="javascripts/jquery.flot.axislabels.js"></script>
+        <script src="javascripts/jquery.flot.time.js"></script>
+        <script src="javascripts/jquery.flot.dashes.js"></script>
+        <script src="javascripts/jquery.flot.pda.scatter2.js"></script>
+</body>
+</html>
+
+
+
+                

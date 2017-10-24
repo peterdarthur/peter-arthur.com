@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+.lv-window {
+	height: 357px;
+	width: 489px;
+}
+.lv-window-large {
+	height: 449px;
+	width: 489px;
+	margin: 30px auto 0 auto;
+	margin-bottom: 75px;
+}
+.view-screen {
+	background-color: #000;
+	height: 327px;
+	width: 489px;
+}
+.view-screen-large {
+	background-color: #000;
+	height: 491px;
+	width: 734px;
+}
+.lv-window-toolbar {
+	font-size: 14px;
+	font-weight: bold;
+	color: #444647;
+	background-image: url(/images/lv_view_screen_toolbar_bg.png);
+	background-repeat: repeat-x;
+	height: 30px;
+	border-right: 1px solid #919090;
+	border-left: 1px solid #919090;
+	padding-top: 1px;
+}
+.channel-btn {
+	float: left;
+	background-image: url(/images/channel_btn_bg_ro.jpg);
+	cursor: pointer;
+	height: 23px;
+	width: 15px;
+	padding-top: 6px;
+	padding-left: 6px;
+}
+.channel-btn-10 {
+	float: left;
+	background-image: url(/images/channel_btn_bg_ro.jpg);
+	cursor: pointer;
+	height: 23px;
+	width: 19px;
+	padding-top: 6px;
+	padding-left: 3px;
+}
+
+.channel-btn:hover {
+	background-position: 0 -29px;
+}
+.view-btns {
+	background-position: 0px 0px;
+	cursor: pointer;
+	float: right;
+	height: 29px;
+}
+.view-btns:hover {
+	background-position: 0 -29px;
+}
+.four-ch {
+	background-image: url(/images/4ch_btn_ro.jpg);
+	width: 43px;
+}
+.eight-ch {
+	background-image: url(/images/8ch_btn_ro.jpg);
+	width: 43px;
+}
+.sixteen-ch {
+	background-image: url(/images/16ch_btn_ro.jpg);
+	width: 43px;
+}
+
+.view-btns-close {
+	background-position: 0px 0px;
+	cursor: pointer;
+	float: right;
+	cursor: pointer;
+	height: 23px;
+	width: 8px;
+	padding-top: 6px;
+	padding-left: 2px;
+
+}
+.view-btns-close:hover {
+	background-position: 0 -23px;
+}
+.ch-close {
+	background-image: url(images/channel_btn_bg_ro.jpg);
+	width: 13px;
+}
+
+.expand {
+	background-image: url(/images/expand_btn_ro.jpg);
+	width: 37px;
+}
+.full-screen {
+	background-image: url(/images/full_screen_btn_ro.jpg);
+	width: 37px;
+}
