@@ -22,13 +22,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Add Fonts
+
 # Normalize
 # Typography
 # Elements
 # Forms
-# Navigation
-	## Links
-	## Menus
+# Links
+# Menus
 # Accessibility
 # Alignments
 # Clearings
@@ -40,12 +41,64 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
+# CUSTOM STYLES
+# MEDIA QUERIES
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Add Fonts
+--------------------------------------------------------------*/
+/*@import url('https://fonts.googleapis.com/css?family=Lora:bold|Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow:bold|Open+Sans');
+
+@font-face {
+	font-family:'Univers_bold';
+	src: url('fonts/Univers_bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'Univers_light';
+	src: url('fonts/Univers_light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'Grotesk-Regular';
+	src: url('fonts/GroteskRegular_gdi.eot');
+	src: url('fonts/GroteskRegular_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GroteskRegular_gdi.woff') format('woff'),
+		url('fonts/GroteskRegular_gdi.ttf') format('truetype'),
+		url('fonts/GroteskRegular_gdi.svg#GroteskRegular-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'Grotesk-Bold';
+	src: url('fonts/GroteskBold_gdi.eot');
+	src: url('fonts/GroteskBold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GroteskBold_gdi.woff') format('woff'),
+		url('fonts/GroteskBold_gdi.ttf') format('truetype'),
+		url('fonts/GroteskBold_gdi.svg#GroteskBold-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -89,6 +142,7 @@ template {
 
 a {
 	background-color: transparent;
+	color: inherit;
 }
 
 a:active,
@@ -110,7 +164,7 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 1.3em;
 	margin: 0.67em 0;
 }
 
@@ -265,14 +319,21 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Univers_bold', sans-serif;
+	font-family: 'Grotesk-Regular', sans-serif;
+	font-family: 'Univers_light', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+	color: rgba(0,0,0,0.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	/*font-family: 'Pragati Narrow', serif;*/
+	font-family: 'Univers_light', sans-serif;
+	color: rgba(0,0,0,0.9);
 }
 
 p {
@@ -477,20 +538,18 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
+# Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	text-decoration: none;
+	transition: 0.3s ease; -webkit-transition: 0.3s ease;
 }
 
-a:visited {
+/*a:visited {
 	color: purple;
-}
+}*/
 
-a:hover, a:focus, a:active {
+a, a:hover, a:focus, a:active, a:visited {
 	color: midnightblue;
 }
 
@@ -505,15 +564,11 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
+.main-navigation {float: none; display: block;}
+	
 .main-navigation ul {
-	display: none;
+	/*display: none;*/
+	/*display:flex;*/
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -555,22 +610,27 @@ a:hover, a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	line-height: 4em; 
+	padding: 0 0.7em;
 }
+
+.main-navigation a:first-child { padding-left: 0; }
+
 
 /* Small menu. */
-.menu-toggle,
+/*.menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
+}*/
 
-@media screen and (min-width: 37.5em) {
+/*@media screen and (min-width: 37.5em) {*/
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
 		display: block;
 	}
-}
+/*}*/
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -850,4 +910,85 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+
+/*--------------------------------------------------------------
+# CUSTOM STYLES   - - Mobile First! - -
+--------------------------------------------------------------*/
+
+
+/* -- Site Branding -- */
+#masthead, #content {margin: 0px 5%;}
+.site-branding {display: inline-block;}
+.site-title {margin-bottom: 0; text-transform: uppercase; font-size: 1em;}
+p.site-description {margin: 0; font-size: 0.8em;}
+
+#primary-menu a {opacity: 0.3;}
+#primary-menu .current-menu-item a {opacity: 1;}
+#primary-menu a:hover {opacity: 1;}
+.home #main {
+	display: grid;
+  	grid-template-columns: 1fr; /* column width, can also do one for -rows*/
+  	grid-gap: 3%;
+}
+
+.post-box {display: block; width: 100%; background-size: cover; position: relative;
+	/*display: flex; justify-content: center; align-items: center;*/
+}
+.post-box .post-info {margin: auto; display: block; padding: 1em 0px; width: 95%; background-color: white; position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.post-box a {}
+.post-box h2, .post-box footer {margin: 0 auto; text-align: center;}
+.post-box h2 {font-size: 1em; line-height: 1.1em;}
+
+
+
+.entry-content p {max-width: 800px; line-height: 1.7em;}
+
+/* FLEX */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+
+/*--------------------------------------------------------------
+# MEDIA QUERIES
+--------------------------------------------------------------*/
+
+@media (min-width: 25em) { /* = 400px  - med phone size */
+	.home #main {grid-template-columns: 1fr 1fr;} /* 2-column homepage */
+}
+@media (min-width: 30em) { /* = 480px  - lrg phone size */
+	.main-navigation {
+		display: inline-block;
+		float: right;
+		height: 5.17em; /* height of .site-branding (2.17em + 3em) */
+	}
+	.main-navigation a:last-child { padding-right: 0; }
+	.main-navigation a:first-child { padding-left: 0.7em; }
+	p.site-description {margin-bottom: 1.5em}
+	#masthead {margin-top: 2em;}
+}
+@media (min-width: 37.5em) { /* = 600px */
+}
+@media (min-width: 48.125em) { /* = 770px */
+	.home #main {grid-template-columns: 1fr 1fr 1fr;} /* 3-column homepage */
 }
