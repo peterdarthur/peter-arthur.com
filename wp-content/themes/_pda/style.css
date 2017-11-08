@@ -968,7 +968,12 @@ p.site-description {margin: 0; font-size: 0.8em;}
   align-items: flex-end;
 }
 
-
+/* ABOUT PAGE */
+#about-content {position: relative;}
+#about-flex {}
+.about-copy {line-height: 1.7em; margin-right: 10em; max-width: 50em;}
+.about-copy.w-img {margin-right: 1em; flex: 1 1 0%; align-self: flex-start;}
+.about-img {width: 10em; height: 10em; border-radius: 50%; background-size: cover; position: absolute; right: -2em; align-self: flex-start; shape-outside: ellipse(10em 10em at 50% 50%);}
 /*--------------------------------------------------------------
 # MEDIA QUERIES
 --------------------------------------------------------------*/
@@ -991,4 +996,5 @@ p.site-description {margin: 0; font-size: 0.8em;}
 }
 @media (min-width: 48.125em) { /* = 770px */
 	.home #main {grid-template-columns: 1fr 1fr 1fr;} /* 3-column homepage */
+	.about-img {top: -2em;} /* bump it up */
 }

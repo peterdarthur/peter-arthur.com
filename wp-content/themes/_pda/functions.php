@@ -158,3 +158,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// =============================================================
+// =============================================================
+// =============================================================
+// ====================== Peter's Changes ======================
+// =============================================================
+// =============================================================
+// =============================================================
+
+
+// add featured image to "About/Contact" page content, with shortcode
+function _pda_featured_image($atts, $content){
+    $atts = shortcode_atts( array(),$atts, 'featured');
+    $post_id = get_the_ID();
+     return get_the_post_thumbnail( $post_id, 'medium' );
+}
+add_shortcode('featured', '_pda_featured_image');
