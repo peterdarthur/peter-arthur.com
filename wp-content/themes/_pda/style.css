@@ -950,6 +950,8 @@ p.site-description {margin: 0; font-size: 0.8em;}
 
 .entry-content p {max-width: 800px; line-height: 1.7em;}
 
+.type-project header {color: #222; font-weight: bold;}
+
 /* FLEX */
 .flex-container {
   padding: 0;
