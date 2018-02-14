@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	
 		<?php
  
 		// on post page
@@ -18,11 +18,13 @@
 			if ( has_post_thumbnail() ) {
 				the_post_thumbnail( 'large' );
 			}
+			echo "<header class='entry-header'>";
 			the_title( '<h1 class="entry-title">', '</h1>' );
+			echo "</header><!-- .entry-header -->";
 
 		// on archive / index page
 		} else {
-			if ( has_post_thumbnail() ) { ?>
+			if ( has_post_thumbnail() ) { // https://developer.wordpress.org/reference/functions/the_post_thumbnail/ ?>
 			    <div class="post-box" style="background-image: url('<?php the_post_thumbnail_url(large); ?>');" title="<?php the_title_attribute(); ?>">
 			        <div class="post-info">
 				        <h2 class="entry-title"><a href='<?php esc_url( the_permalink() )?>' rel="bookmark"><?php the_title(); ?></a></h2>
@@ -41,7 +43,16 @@
 				'<span class="edit-link">',
 				'</span>'
 				);
-			} // https://developer.wordpress.org/reference/functions/the_post_thumbnail/
+			} else {?>
+				<header class='entry-header'>
+					<h2 class="entry-title"><a href='<?php esc_url( the_permalink() )?>' rel="bookmark"><?php the_title(); ?></a></h2>
+				</header><!-- .entry-header -->
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
+				<hr>
+			<?php 
+			}
 			
 		}
 			
@@ -75,7 +86,7 @@
 		} ?>
 	</div><!-- .entry-content -->
 
-	<?php if ( is_singular() ) {  // only show content on single posts ?>
+	<?php //if ( is_singular() ) {  // only show content on single posts ?>
 		<footer class="entry-footer">
 			<?php _pda_entry_footer(); 
 				
@@ -93,5 +104,5 @@
 				);?>
 
 		</footer><!-- .entry-footer -->
-	<?php } ?>
+	<?php //} ?>
 </article><!-- #post-<?php the_ID(); ?> -->

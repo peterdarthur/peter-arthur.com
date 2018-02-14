@@ -1,0 +1,80 @@
+/*!
+Theme Name: Freelancer
+Theme URI: https://startbootstrap.com/template-overviews/freelancer/
+Author: StartBootstrap
+Author URI: https://startbootstrap.com/
+Description: A one page Bootstrap portfolio theme for freelancers featuring a custom portfolio grid.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: freelancer
+Tags: bootstrap, portfolio, freelance, grid, startbootstrap
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - DEFAULT OVERRIDES - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Nav */
+#mainNav {padding-top: 0; padding-bottom: 0;}
+#mainNav .navbar-nav {margin-top: 0px;}
+#mainNav .navbar-toggler {font-size: 1.25rem;}
+
+/* Heading */
+header.masthead h1 {font-size: 2.5rem;}
+
+/* Portfolio Section */
+.portfolio .portfolio-item {max-width: 1000px;}
+
+/* Form */
+.floating-label-form-group {border: none;}
+input.form-control, textarea.form-control {border: 0px solid #e9ecef; border-bottom: 3px solid #e9ecef;  border-radius: 5px; background: rgba(0,0,0,0.03); padding: .5rem .75rem; font-size: 1.2em;}
+input.form-control:focus, textarea.form-control:focus {box-shadow: 0 0 0 0rem rgba(0,123,255,.25);}
+
+.caldera-grid label {font-size: 1em; margin-bottom: 0.25rem;}
+
+
+/* Icons */
+hr.coffee-light:after {content: '\f0f4';}
+hr.folder-open-dark:after {content: '\f07c';}
+hr.comments-dark:after {content: '\f086';}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - BREAKPOINTS - OVERRIDES - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+        /* XS */
+        @media (max-width: 575.99px) {   
+            header.masthead { padding-top: calc(2rem + 48px); padding-bottom: 4rem; }
+            #portfolio {padding-bottom: 1rem;} 
+        }
+
+        /* SM */
+        @media (min-width: 576px) and (max-width: 767.99px) { }
+
+        /* MD */
+        @media (min-width: 768px) and (max-width: 991.99px) { }
+
+        /* LG */
+        @media (min-width: 992px) and (max-width: 1199.99px) { }
+
+        /* XL */
+        @media (min-width: 1200px) { }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - New Theme Elements  - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.img-circle {border-radius: 100%;}
+.peter-face {max-height: 200px;}
+
+.text-white p a {color: #fff; text-decoration: underline;}
+/* .text-white a.btn {text-decoration: none;} */
+.text-white p a:hover {color: #fff;}
+/* .text-white a.btn:hover {color: } */
