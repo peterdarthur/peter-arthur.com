@@ -57,7 +57,7 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <img class="img-fluid img-circle peter-face mb-5 d-block mx-auto" src="/wp-content/uploads/2017/10/PeterArthur-e1509225050928-768x757.jpg" alt="">
+        <img class="img-fluid img-circle peter-face mb-5 d-block mx-auto" src="/wp-content/uploads/2018/02/PeterArthur_square-768x769.jpg" alt="">
         <!-- <img class="img-fluid mb-5 d-block mx-auto" src="/wp-content/themes/startbootstrap-freelancer-gh-pages/img/profile.png" alt="">         -->
         <h1 class="mb-0">Peter Arthur</h1>
         <hr class="star-light">
