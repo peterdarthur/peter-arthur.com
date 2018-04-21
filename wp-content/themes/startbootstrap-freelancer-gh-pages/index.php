@@ -3,7 +3,7 @@
 
   <head>
 
-    <php include_once "includes/head_contents.php"; ?>
+    <?php include_once "includes/head_contents.php"; ?>
 
     <meta name="description" content="Peter Arthur is a web developer with extensive design and writing experience.">
     <meta name="author" content="Peter Arthur">
