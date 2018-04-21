@@ -80,7 +80,7 @@
         <hr class="coffee-light star-light mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">I'm a designer and developer living in San Jose, CA. I enjoy building clean, simple, usable websites that engage and inform. If you'd like to work with me, please send me a message below.</p>
+            <p class="lead">I'm a web developer living in San Jose, CA. I enjoy building clean, simple, usable websites that engage and inform. If you'd like to work with me, please send me a message below.</p>
             <!-- <p class="lead">Hi! I'm a front-end developer passionate about delivering high-quality branded experiences. My projects range from WordPress themes and plugins, to Javascript web applications, to setting up lean and responsive HTML/CSS pages and email templates. Shoot me a message if you'd like to work together!</p> -->
           </div>
           <div class="col-lg-4 mr-auto">
