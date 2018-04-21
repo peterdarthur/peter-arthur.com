@@ -3,30 +3,12 @@
 
   <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <php include_once "includes/head_contents.php"; ?>
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <meta name="description" content="Peter Arthur is a web developer with extensive design and writing experience.">
+    <meta name="author" content="Peter Arthur">
 
-    <!-- Bootstrap core CSS -->
-    <link href="/wp-content/themes/startbootstrap-freelancer-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="/wp-content/themes/startbootstrap-freelancer-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="/wp-content/themes/startbootstrap-freelancer-gh-pages/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="/wp-content/themes/startbootstrap-freelancer-gh-pages/css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link href="/wp-content/themes/startbootstrap-freelancer-gh-pages/style.css" rel="stylesheet">
-
+    <title>Home • Peter Arthur</title>
 
   </head>
 
@@ -57,7 +39,7 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <img class="img-fluid img-circle peter-face mb-5 d-block mx-auto" src="/wp-content/uploads/2017/10/PeterArthur-e1509225050928-768x757.jpg" alt="">
+        <img class="img-fluid img-circle peter-face mb-5 d-block mx-auto" src="/wp-content/uploads/2018/02/PeterArthur_square-768x769.jpg" alt="">
         <!-- <img class="img-fluid mb-5 d-block mx-auto" src="/wp-content/themes/startbootstrap-freelancer-gh-pages/img/profile.png" alt="">         -->
         <h1 class="mb-0">Peter Arthur</h1>
         <hr class="star-light">
@@ -124,9 +106,9 @@
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <?php echo do_shortcode('[caldera_form id="CF5a7a4ee1eb68b"]'); ?>
+            <?php echo do_shortcode('[caldera_form id="CF5a875cddc9ed4"]'); ?>
             
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <!-- <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -160,7 +142,7 @@
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-lg" id="sendMessageButton">Send</button>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
