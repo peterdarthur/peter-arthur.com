@@ -84,7 +84,8 @@
             <!-- <p class="lead">Hi! I'm a front-end developer passionate about delivering high-quality branded experiences. My projects range from WordPress themes and plugins, to Javascript web applications, to setting up lean and responsive HTML/CSS pages and email templates. Shoot me a message if you'd like to work together!</p> -->
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">If you'd like to know more about my work, browse my <a href="#portfolio">portfolio</a> or take a look at my resume.</p>
+            <!-- <p class="lead">If you'd like to know more about my work, browse my <a href="#portfolio">portfolio</a> or take a look at my resume.</p> -->
+            <p class="lead">If you'd like to know more about my work, take a look at my resume.</p>            
             <div class="text-center mt-2">
               <a class="btn btn-lg btn-outline-light" href="/resume.pdf">
                 <i class="fa fa-file-text-o mr-2"></i>
