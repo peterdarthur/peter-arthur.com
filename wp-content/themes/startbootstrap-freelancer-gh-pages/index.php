@@ -43,7 +43,7 @@
         <!-- <img class="img-fluid mb-5 d-block mx-auto" src="/wp-content/themes/startbootstrap-freelancer-gh-pages/img/profile.png" alt="">         -->
         <h1 class="mb-0">Peter Arthur</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">UI Designer, Front-End &amp; WordPress Developer</h2>
+        <h2 class="font-weight-light mb-0">Web Architect &amp; WordPress Developer</h2>
       </div>
     </header>
 

@@ -30,10 +30,18 @@ module.exports = function (grunt) {
               }]
             }
         },
+        bump: {
+          options: {
+            commit: true,
+            createTag: true,
+            path: true,
+            pushTo: 'origin'
+          }
+        },
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
-            banner: '/*! <%= pkg.name %> - v<%= pkg.version %>'
+            banner: '/*! <%= pkg.name %> - v<%= pkg.version %> */'
             },
             my_target: {
               files: {
@@ -46,5 +54,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.registerTask('default', ['jshint','compass:dist','cssmin','uglify']);
+    grunt.loadNpmTasks('grunt-bump');
+    grunt.registerTask('default', ['jshint','compass:dist','cssmin','bump','uglify']);
 };
